@@ -14,7 +14,7 @@ ContentManager.prototype.getSetting = function () {
 }
 
 ContentManager.prototype.addListener = function () {
-    this.place_holder.addEventListener("mouseup", this._onMouseUp.bind(this));
+    this.place_holder.addEventListener("mouseup", this._onMouseUp.bind(this)); //mouseup
 }
 
 // fetch select word
@@ -31,7 +31,9 @@ ContentManager.prototype._onMouseUp = function (event) {
         event.target.getBoundingClientRect() :
         this.selection.getRangeAt(0).getBoundingClientRect();
 
+    //if(this.altKey === true) {
     this.createTooltip(this.word);
+    //}
 }
 
 ContentManager.prototype.createTooltip = function (word) {

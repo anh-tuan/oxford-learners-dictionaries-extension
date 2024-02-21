@@ -15,7 +15,7 @@ tooltip container
     /*min-height: 100px;*/
 
     cursor:auto;
-    z-index: 2147483647;
+    z-index: 0; /*2147483647*/
 	font-family: "Open Sans",Arial,sans-serif;
     font-size: 15px;
     color: #333;

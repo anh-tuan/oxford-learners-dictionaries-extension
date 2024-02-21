@@ -4,7 +4,6 @@ Add collocation onclick function
 */
 OnclickFunction.collapseToggle = function (btn) {
     btn.target.parentNode.classList.toggle("is-active");
-
 }
 
 
